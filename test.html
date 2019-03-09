@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @keyframes slider {
+        0% {
+          left: 0;
+        }
+        10% {
+          left: 0;
+        }
+        20% {
+          left: -100%;
+        }
+        30% {
+          left: -100%;
+        }
+        40% {
+          left: -200%;
+        }
+        50% {
+          left: -200%;
+        }
+        60% {
+          left: -300%;
+        }
+        70% {
+          left: -300%;
+        }
+        80% {
+          left: -400%;
+        }
+        90% {
+          left: 400%;
+        }
+        100% {
+          left: 0;
+        }
+      }
+      #slider {
+        overflow: hidden;
+      }
+      #slider figure img {
+        float: left;
+        width: 20%;
+        height: 400px;
+      }
+      #slider figure {
+        position: relative;
+        height: 400px;
+        width: 500%;
+        animation: slider 10s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slider">
+      <figure>
+        <img src="pic1.png" />
+        <img src="pic2.png" />
+        <img src="pic3.png" />
+        <img src="pic4.png" />
+        <img src="pic5.png" />
+      </figure>
+    </div>
+  </body>
+</html>

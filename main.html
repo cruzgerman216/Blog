@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>German Cruz Blog</title>
+    <style>
+      .header {
+        text-align: center;
+        margin: 0px;
+        margin-top: 20px;
+        color: #707070;
+        font-family: "Raleway", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #eee;
+        margin: 0;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+      }
+      .blueblock {
+        background-color: blue;
+        margin-top: 20px;
+        width: 100%;
+        height: 500px;
+      }
+      .redblock {
+        background-color: red;
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+      }
+      .greenblock {
+        background-color: green;
+        margin-top: 20px;
+        width: 100%;
+        height: 60px;
+      }
+      .rightcolumn {
+        flex: 60%;
+        max-width: 65%;
+        padding: 0 4px;
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      .leftcolumn {
+        flex: 35%;
+        max-width: 35%;
+        padding: 0 4px;
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+
+      @media (max-width: 900px) {
+        .leftcolumn,
+        .rightcolumn {
+          min-width: 100%;
+        }
+      }
+      .nav-row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        vertical-align: middle;
+      }
+      .nav-column:hover {
+        transform: scale(1.2);
+      }
+      .nav-column {
+        flex: 20%;
+        max-width: 20%;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+      .imgreset {
+        width: 25%;
+        margin: 20px 0px;
+      }
+      .white-container {
+        color: #000;
+        background-color: #fff;
+      }
+      .card {
+        margin-top: 20px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        background-color: #fff;
+      }
+
+      .row > div {
+        margin: 10px;
+      }
+      .card > div {
+        margin: 0;
+      }
+      h2 {
+        margin: 0;
+      }
+      .card-right {
+        height: 500px;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        background-color: white;
+      }
+      .paragraph {
+        padding: 0px 20px 10px 0px;
+        line-height: 25px;
+      }
+      .card-header {
+        padding: 10px 20px 0px 0px;
+      }
+      .read-more {
+        padding: 10px 20px;
+      }
+      .adjust {
+        padding: 0 0 10px 20px;
+      }
+      .footer {
+        background-color: grey;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-top: 16px;
+      }
+      .center {
+        display: block;
+        text-align: center;
+      }
+      .center2 {
+        vertical-align: middle;
+      }
+      .prev-next {
+        padding: 0px 30px;
+      }
+      .sub {
+        background-color: red;
+        color: white;
+      }
+      .spacebottomtop {
+        margin: 20px 0px;
+      }
+      .yt {
+        padding-bottom: 30px;
+      }
+      .subscribebutton {
+        padding: 8px 15px;
+        border-radius: 5px;
+      }
+      .introdescription {
+        font-family: "Karla", sans-serif;
+      }
+      .paragraphfont {
+        font-family: "Karla", sans-serif;
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Karla");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Karla");
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="center">
+      <h1 class="header">German Cruz Blog</h1>
+      <p class="introdescription">Striving for free education</p>
+    </div>
+    <!--Navbar-->
+    <nav>
+      <div class="nav-row">
+        <div class="nav-column">
+          <p>Home</p>
+        </div>
+        <div class="nav-column">
+          <p>HTML</p>
+        </div>
+        <div class="nav-column">
+          <p>CSS</p>
+        </div>
+        <div class="nav-column">
+          <p>Javscript</p>
+        </div>
+        <div class="nav-column">
+          <p>React</p>
+        </div>
+      </div>
+    </nav>
+
+    <!--container row and column-->
+    <div class="row rc">
+      <div class="leftcolumn lc">
+        <!--LEFT CARD 1 - ABOUT-->
+        <div class="card">
+          <img src="profilepicture.png" />
+          <div class="white-container">
+            <div class="adjust">
+              <h2 class="card-header">About</h2>
+              <p class="paragraph paragraphfont">
+                Hi my name is German Cruz and what can I say, I love all things
+                programming. I upload tutorial videos for those who want to get
+                into web dev or the into the industry. I promote self taught
+                developers and online web knowledge. Catch me on youtube
+                sometime!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--LEFT CARD 2 - test-->
+        <div class="card">
+          <div class="white-container center">
+            <img class="imgreset" src="youtubeicon.png" width="20px" />
+            <div class="spacebottomtop" id="subscribers"></div>
+            <button class="sub subscribebutton">Subscribe</button>
+            <p class="yt">Tutorials and programmer advice</p>
+          </div>
+        </div>
+      </div>
+      <!--ARTICLE 1-->
+      <div class="rightcolumn rc">
+        <div class="card-right">
+          <img src="forrest.png" />
+          <div class="white-container">
+            <div class="adjust">
+              <h2 class="card-header">About</h2>
+              <p class="paragraph">
+                Hi my name is German Cruz and what can I say, I love all things
+                programming. I upload tutorial videos for those who want to get
+                into web dev or the into the industry. I promote self taught
+                developers and online web knowledge. Catch me on youtube
+                sometime!
+              </p>
+              <button class="read-more"><b>READ MORE »</b></button>
+            </div>
+          </div>
+        </div>
+        <!--ARTICLE 2-->
+        <div class="card-right">
+          <img src="forrest.png" />
+          <div class="white-container">
+            <div class="adjust">
+              <h2 class="card-header">About</h2>
+              <p class="paragraph">
+                Hi my name is German Cruz and what can I say, I love all things
+                programming. I upload tutorial videos for those who want to get
+                into web dev or the into the industry. I promote self taught
+                developers and online web knowledge. Catch me on youtube
+                sometime!
+              </p>
+              <button class="read-more"><b>READ MORE »</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer - prev and next-->
+    <div class="footer center">
+      <button class="prev-next">Prev</button>
+      <button class="prev-next">Next</button>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        var key = "AIzaSyCQ-FPCgpoW05CHHKvRO9WOyPMWTUf5E3o";
+        var channelID = "UCZOSVIfGcuYouphdgwo3NZw";
+        var URL = "https://www.googleapis.com/youtube/v3/channels";
+        var options = {
+          part: "statistics",
+          key: key,
+          maxResults: 20,
+          id: channelID
+        };
+
+        function loadContent() {
+          $.getJSON(URL, options, function(data) {
+            console.log(data.items[0].statistics.subscriberCount);
+            document.getElementById("subscribers").innerHTML =
+              data.items[0].statistics.subscriberCount;
+          });
+        }
+        loadContent();
+      });
+    </script>
+  </body>
+</html>
