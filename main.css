@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Karla");
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  text-align: center;
+  margin: 0px;
+  margin-top: 20px;
+  color: #707070;
+  font-family: "Raleway", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  margin: 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.blueblock {
+  background-color: blue;
+  margin-top: 20px;
+  width: 100%;
+  height: 500px;
+}
+.redblock {
+  background-color: red;
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+}
+.greenblock {
+  background-color: green;
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+}
+.rightcolumn {
+  flex: 60%;
+  max-width: 65%;
+  padding: 0 4px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.leftcolumn {
+  flex: 35%;
+  max-width: 35%;
+  padding: 0 4px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 900px) {
+  .leftcolumn,
+  .rightcolumn {
+    min-width: 100%;
+  }
+}
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  vertical-align: middle;
+}
+.nav-column:hover {
+  transform: scale(1.2);
+}
+.nav-column {
+  flex: 20%;
+  max-width: 20%;
+  text-align: center;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.imgreset {
+  width: 25%;
+  margin: 20px 0px;
+}
+.white-container {
+  color: #000;
+  background-color: #fff;
+}
+.card {
+  margin-top: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+
+.row > div {
+  margin: 10px;
+}
+.card > div {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+.card-right {
+  height: 500px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+.paragraph {
+  padding: 0px 20px 10px 0px;
+  line-height: 25px;
+}
+.card-header {
+  padding: 10px 20px 0px 0px;
+}
+.read-more {
+  padding: 10px 20px;
+}
+.adjust {
+  padding: 0 0 10px 20px;
+}
+.footer {
+  background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 16px;
+}
+.center {
+  display: block;
+  text-align: center;
+}
+.center2 {
+  vertical-align: middle;
+}
+.prev-next {
+  padding: 0px 30px;
+}
+.sub {
+  background-color: red;
+  color: white;
+}
+.spacebottomtop {
+  margin: 20px 0px;
+}
+.yt {
+  padding-bottom: 30px;
+}
+.subscribebutton {
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.introdescription {
+  font-family: "Karla", sans-serif;
+}
+.paragraphfont {
+  font-family: "Karla", sans-serif;
+}
+
+/*IMAGE SLIDER*/
+
+#slider {
+  overflow: hidden;
+}
+#slider figure img {
+  float: left;
+  width: 20%;
+  height: 400px;
+}
+#slider figure {
+  position: relative;
+  height: 400px;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  transition: 1s ease-in-out;
+}
+
+.btn-next,
+.btn-prev {
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  color: white;
+  background: #3949ab;
+  padding: 20px;
+  font-size: 50px;
+  border: none;
+}
+.btn-prev {
+  left: 0px;
+}
+.btn-next {
+  right: 0px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}

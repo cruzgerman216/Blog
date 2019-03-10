@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.html",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruzgerman216/Blog.git"
+  },
+  "author": "German Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cruzgerman216/Blog/issues"
+  },
+  "homepage": "https://github.com/cruzgerman216/Blog#readme"
+}
