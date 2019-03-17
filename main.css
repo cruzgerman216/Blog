@@ -163,15 +163,46 @@ h2 {
 
 #slider {
   overflow: hidden;
+  width: 100%;
 }
 #slider figure img {
   float: left;
   width: 20%;
-  height: 400px;
+  /* height: 600px;*/
+}
+#slider figure .image-container {
+  float: left;
+  width: 20%;
+}
+
+#slide1-background {
+  background-image: url("pic1.png");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size: cover;
+}
+#aboutme {
+  background-color: #cccccc;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin: 0 0 0 80px;
+  width: 300px;
+}
+hr {
+  display: block;
+  margin: 10px 0 2px 0;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
 }
 #slider figure {
   position: relative;
-  height: 400px;
+  height: auto;
   width: 500%;
   margin: 0;
   left: 0;
@@ -208,4 +239,94 @@ h2 {
 .active,
 .dot:hover {
   background-color: #717171;
+}
+
+/* end of image slide */
+item1 {
+  grid-area: header;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu menu main main right right"
+    "menu menu footer footer footer footer";
+  grid-gap: 0 0 0 0;
+  padding: 10px;
+  margin: 0 0 0 70px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 60px 0;
+  font-size: 30px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.image-container .header1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  text-align: center;
+  margin: 0px;
+  margin-top: 20px;
+  color: #707070;
+  font-family: "Raleway", sans-serif;
+}
+.image-container p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  width: 70%;
+}
+@media screen and (max-width: 1100px) {
+  .image-container p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+  }
+}
+
+.image-container video {
+  width: 100%;
+  height: auto;
+}
+
+.image-container #imggc {
+  position: absolute;
+  width: 30%;
+  margin: 0px;
+  left: 35%;
+  top: 20%;
+  z-index: 2;
 }
