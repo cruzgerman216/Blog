@@ -285,15 +285,12 @@ item1 {
 
 .image-container .header1 {
   position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: block;
   text-align: center;
-  margin: 0px;
-  margin-top: 20px;
+  margin: 20px auto;
   color: #707070;
   font-family: "Raleway", sans-serif;
+  width: 100%;
 }
 .image-container p {
   position: absolute;
