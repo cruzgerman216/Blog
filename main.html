@@ -15,15 +15,22 @@
   <body>
     <div id="slider">
       <figure>
+        <div class="btn-container" style="text-align:center">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
         <div class="image-container">
           <h1 class="header1">German Cruz Blog</h1>
-
           <a href="https://www.w3schools.com" target="_blank">
             <img id="imggc" src="germancruz.png"
           /></a>
           <p>
             Self Taught Developer, Youtube Teacher and lorem epsum
           </p>
+
           <video width="320" height="240" autoplay loop>
             <source src="vid1.mp4" type="video/mp4" />
           </video>
@@ -36,7 +43,7 @@
 
       <button class="btn-prev"><i class="fa fa-arrow-circle-left"></i></button>
       <button class="btn-next"><i class="fa fa-arrow-circle-right"></i></button>
-      <div style="text-align:center">
+      <div class="btn-container" style="text-align:center">
         <span class="dot" onclick="currentSlide(0)"></span>
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>

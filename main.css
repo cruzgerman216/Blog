@@ -164,6 +164,7 @@ h2 {
 #slider {
   overflow: hidden;
   width: 100%;
+  height: auto;
 }
 #slider figure img {
   float: left;
@@ -175,12 +176,6 @@ h2 {
   width: 20%;
 }
 
-#slide1-background {
-  background-image: url("pic1.png");
-  background-repeat: no-repeat;
-  background-color: #cccccc;
-  background-size: cover;
-}
 #aboutme {
   background-color: #cccccc;
   width: 100%;
@@ -202,13 +197,18 @@ hr {
 }
 #slider figure {
   position: relative;
-  height: auto;
   width: 500%;
   margin: 0;
-  left: 0;
   transition: 1s ease-in-out;
+  z-index: -1;
 }
 
+.btn-container {
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  background-color: blue;
+}
 .btn-next,
 .btn-prev {
   position: absolute;
