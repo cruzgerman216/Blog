@@ -164,7 +164,59 @@ h2 {
 #slider {
   overflow: hidden;
   width: 100%;
+  position: relative;
+  max-height: 90vh;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  transition: 1s ease-in-out;
+  z-index: -1;
+  /* width is the issue */
+}
+
+#top {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.overlay {
+  display: inline-block;
+  position: relative;
+}
+.bottomleft {
+  position: absolute;
+
+  font-size: 40px;
+  color: red;
+}
+
+#gone {
+  opacity: 0;
+  max-height: 90vh;
+}
+.overlayoutside {
+  position: absolute;
+}
+
+.btn-container {
   height: auto;
+  z-index: 2;
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+}
+#slider figure .block {
+  background-color: red;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+  /* need to change */
+  bottom: 1%;
+  right: 50%;
 }
 #slider figure img {
   float: left;
@@ -195,20 +247,7 @@ hr {
   border-style: inset;
   border-width: 1px;
 }
-#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  transition: 1s ease-in-out;
-  z-index: -1;
-}
 
-.btn-container {
-  height: auto;
-  z-index: 2;
-  position: absolute;
-  background-color: blue;
-}
 .btn-next,
 .btn-prev {
   position: absolute;
@@ -235,6 +274,7 @@ hr {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  bottom: 1%;
 }
 .active,
 .dot:hover {

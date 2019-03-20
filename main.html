@@ -14,14 +14,20 @@
   </head>
   <body>
     <div id="slider">
-      <figure>
-        <div class="btn-container" style="text-align:center">
-          <span class="dot" onclick="currentSlide(0)"></span>
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
+      <div class="overlayoutside">
+        <div class="overlay">
+          <div class="btn-container" style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          <img id="gone" src="pic1.jpg" />
         </div>
+      </div>
+
+      <figure>
         <div class="image-container">
           <h1 class="header1">German Cruz Blog</h1>
           <a href="https://www.w3schools.com" target="_blank">
@@ -43,13 +49,14 @@
 
       <button class="btn-prev"><i class="fa fa-arrow-circle-left"></i></button>
       <button class="btn-next"><i class="fa fa-arrow-circle-right"></i></button>
+      <!-- 
       <div class="btn-container" style="text-align:center">
         <span class="dot" onclick="currentSlide(0)"></span>
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
+      </div>-->
     </div>
     <!--Header-->
     <div class="center">

@@ -3,7 +3,7 @@
   <head>
     <title>German Cruz Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="test.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <link
       rel="stylesheet"
@@ -13,161 +13,21 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div id="slider">
-      <figure>
-        <span id="slide1-background">
-          <div class="grid-container">
-            <div class="item1">Header</div>
-            <div class="item2">
-              <div>
-                Hi my name is German Cruz and what can I say, I love all things
-                programming. I upload tutorial videos for those who want to get
-                into web dev or the into the industry. I promote self taught
-                developers and online web knowledge. Catch me on youtube
-                sometime!
-              </div>
-            </div>
-            <div class="item3">Main</div>
-            <div class="item4">Right</div>
-            <div class="item5">Footer</div>
-          </div>
-        </span>
-        <img src="pic2.png" />
-        <img src="pic3.png" />
-        <img src="pic4.png" />
-        <img src="pic5.png" />
-      </figure>
-
-      <button class="btn-prev"><i class="fa fa-arrow-circle-left"></i></button>
-      <button class="btn-next"><i class="fa fa-arrow-circle-right"></i></button>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </div>
-    <!--Header-->
-    <div class="center">
-      <h1 class="header">German Cruz Blog</h1>
-      <p class="introdescription">Striving for free education</p>
-    </div>
-    <!--Navbar-->
-    <nav>
-      <div class="nav-row">
-        <div class="nav-column">
-          <p>Home</p>
-        </div>
-        <div class="nav-column">
-          <p>HTML</p>
-        </div>
-        <div class="nav-column">
-          <p>CSS</p>
-        </div>
-        <div class="nav-column">
-          <p>Javscript</p>
-        </div>
-        <div class="nav-column">
-          <p>React</p>
+    <div class="overlay">
+      <div id="top">
+        <div class="overlay">
+          <img id="gone" src="pic1.jpg" />
+          <div class="bottomleft">Bottom Left</div>
         </div>
       </div>
-    </nav>
-
-    <!--container row and column-->
-    <div class="row rc">
-      <div class="leftcolumn lc">
-        <!--LEFT CARD 1 - ABOUT-->
-        <div class="card">
-          <img src="profilepicture.png" />
-          <div class="white-container">
-            <div class="adjust">
-              <h2 class="card-header">About</h2>
-              <p class="paragraph paragraphfont">
-                Hi my name is German Cruz and what can I say, I love all things
-                programming. I upload tutorial videos for those who want to get
-                into web dev or the into the industry. I promote self taught
-                developers and online web knowledge. Catch me on youtube
-                sometime!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--LEFT CARD 2 - test-->
-        <div class="card">
-          <div class="white-container center">
-            <img class="imgreset" src="youtubeicon.png" width="20px" />
-            <div class="spacebottomtop" id="subscribers"></div>
-            <button class="sub subscribebutton">Subscribe</button>
-            <p class="yt">Tutorials and programmer advice</p>
-          </div>
-        </div>
-      </div>
-      <!--ARTICLE 1-->
-      <div class="rightcolumn rc">
-        <div class="card-right">
-          <img src="forrest.png" />
-          <div class="white-container">
-            <div class="adjust">
-              <h2 class="card-header">About</h2>
-              <p class="paragraph">
-                Hi my name is German Cruz and what can I say, I love all things
-                programming. I upload tutorial videos for those who want to get
-                into web dev or the into the industry. I promote self taught
-                developers and online web knowledge. Catch me on youtube
-                sometime!
-              </p>
-              <button class="read-more"><b>READ MORE »</b></button>
-            </div>
-          </div>
-        </div>
-        <!--ARTICLE 2-->
-        <div class="card-right">
-          <img src="forrest.png" />
-          <div class="white-container">
-            <div class="adjust">
-              <h2 class="card-header">About</h2>
-              <p class="paragraph">
-                Hi my name is German Cruz and what can I say, I love all things
-                programming. I upload tutorial videos for those who want to get
-                into web dev or the into the industry. I promote self taught
-                developers and online web knowledge. Catch me on youtube
-                sometime!
-              </p>
-              <button class="read-more"><b>READ MORE »</b></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Footer - prev and next-->
-    <div class="footer center">
-      <button class="prev-next">Prev</button>
-      <button class="prev-next">Next</button>
+      <img id="bottom" src="pic2.jpg" />
     </div>
 
-    <script>
-      $(document).ready(function() {
-        var key = "AIzaSyCQ-FPCgpoW05CHHKvRO9WOyPMWTUf5E3o";
-        var channelID = "UCZOSVIfGcuYouphdgwo3NZw";
-        var URL = "https://www.googleapis.com/youtube/v3/channels";
-        var options = {
-          part: "statistics",
-          key: key,
-          maxResults: 20,
-          id: channelID
-        };
-
-        function loadContent() {
-          $.getJSON(URL, options, function(data) {
-            console.log(data.items[0].statistics.subscriberCount);
-            document.getElementById("subscribers").innerHTML =
-              data.items[0].statistics.subscriberCount;
-          });
-        }
-        loadContent();
-      });
-    </script>
+    <div class="overlay">
+      <div class="bottomleft">Bottom Left</div>
+      <img id="bottom" src="pic2.jpg" />
+    </div>
+    <video autoplay loop>
+        <source src="vid1.mp4" type="video/mp4" />
   </body>
 </html>
