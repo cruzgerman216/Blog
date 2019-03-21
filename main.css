@@ -165,7 +165,7 @@ h2 {
   overflow: hidden;
   width: 100%;
   position: relative;
-  max-height: 90vh;
+  max-height: auto;
 }
 #slider figure {
   position: relative;
@@ -354,7 +354,13 @@ item1 {
   }
 }
 
-.image-container video {
+@media screen and (min-width: 500px) {
+  .image-container #slide1 {
+    width: 150%;
+    height: auto;
+  }
+}
+.image-container #slide1 {
   width: 100%;
   height: auto;
 }
@@ -366,4 +372,9 @@ item1 {
   left: 35%;
   top: 20%;
   z-index: 2;
+}
+
+.block {
+  width: 4000px;
+  height: 2245px;
 }
